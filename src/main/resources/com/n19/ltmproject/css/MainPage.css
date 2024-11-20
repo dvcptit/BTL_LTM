@@ -1,0 +1,231 @@
+/* START Trang Chu CSS */
+.acthorpanemain {
+    -fx-border-radius: 0 0 12px 12px;
+    -fx-background-color: #d9e4dc; /* Light, soft green */
+    -fx-background-radius: 0 0 12px 12px;
+    -fx-padding: 10px; /* Add padding for better spacing */
+}
+
+.acthorpanechild {
+    -fx-border-color: #a9b9a3; /* Softer gray-green border */
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 12px;
+    -fx-background-color: #f0f5f2; /* Very light green background */
+    -fx-background-radius: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 8, 0, 0, 2); /* Soft shadow for depth */
+    -fx-padding: 10px; /* Add padding for better spacing */
+}
+
+.table-view {
+    -fx-background-color: linear-gradient(to bottom, #eaf2e8, #c7dac2); /* Gradient from light to soft green */
+    -fx-border-color: #9bb89e; /* Greenish border */
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 145, 34, 0.15), 8, 0.3, 0, 2); /* Subtle green shadow */
+    -fx-font-size: 14px; /* Consistent font size */
+}
+
+.table-view .scroll-bar:horizontal,
+.table-view .scroll-bar:vertical {
+    -fx-opacity: 0; /* Hide scroll bars */
+}
+
+.table-view .column-header {
+    -fx-background-color: #5ba270; /* Medium green for header */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-font-size: 15px;
+    -fx-border-color: #4b8a5e;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.table-row-cell {
+    -fx-background-color: #eaf2e8; /* Light green */
+    -fx-border-color: #c7dac2; /* Soft border */
+    -fx-border-width: 0 0 1px 0;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #d4e6d1; /* Slightly darker green for odd rows */
+}
+
+.table-row-cell:even {
+    -fx-background-color: #eaf2e8; /* Lighter green for even rows */
+}
+
+.table-cell {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #2f4f4f; /* Dark green text */
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #57a56d; /* Vibrant green for selected row */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #8ccf95; /* Light green on hover */
+    -fx-text-fill: #2f4f4f;
+}
+
+.button-acthorpane {
+    -fx-background-color: #d9e4dc;
+    -fx-border-color: #5ba270;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 5px 15px;
+    -fx-text-fill: #2f4f4f; /* Dark green text */
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(91, 162, 112, 0.3), 6, 0.2, 0, 2);
+    -fx-cursor: hand; /* Cursor changes to pointer */
+}
+
+.button-acthorpane:hover {
+    -fx-background-color: #c6d7c9;
+}
+
+.button-acthorpane:pressed {
+    -fx-background-color: #b1c3b5;
+}
+
+.button-startand-refresh, .buttonstartandinvite {
+    -fx-background-color: #5ba270; /* Primary green button */
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 30px;
+    -fx-padding: 8px 18px; /* Added padding for consistency */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 5, 0, 0, 2); /* Soft shadow for button */
+    -fx-cursor: hand; /* Cursor changes to pointer */
+}
+
+.button-startand-refresh:disabled,
+.buttonstartandinvite:disabled {
+    -fx-background-color: #b1b1b1; /* Gray for disabled state */
+    -fx-text-fill: #7a7a7a; /* Dark gray text for disabled state */
+    -fx-effect: null; /* Remove shadow for disabled state */
+}
+
+.labelrefusematch, .labelcancelmatch {
+    -fx-background-color: #ffe6e6; /* Light red for warning labels */
+    -fx-text-fill: #d9534f;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 18px;
+    -fx-border-color: #d43f3a;
+    -fx-border-width: 2px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 0, 4);
+    -fx-alignment: center;
+}
+
+.pointer-button {
+    -fx-cursor: hand; /* Change the cursor to hand */
+}
+
+/* END Trang Chu CSS */
+
+
+/* General button styles */
+.button-acthorpane {
+    -fx-background-color: #d9e4dc;
+    -fx-border-color: #5ba270;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 5px 15px;
+    -fx-text-fill: #2f4f4f; /* Dark green text */
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(91, 162, 112, 0.3), 6, 0.2, 0, 2);
+}
+
+/* Add hover effects for buttons */
+.button-acthorpane:hover {
+    -fx-background-color: #c3d5d1; /* Lighter shade on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0.2, 0, 2);
+}
+
+/* Enhance labels */
+.labelrefusematch,
+.labelcancelmatch {
+    -fx-background-color: #ffcccc; /* Light red background for warning */
+    -fx-text-fill: #c80000; /* Dark red text */
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.2, 0, 2);
+}
+
+/* TableView styles */
+.table-view {
+    -fx-background-color: linear-gradient(to bottom, #eaf2e8, #c7dac2); /* Gradient from light to soft green */
+    -fx-border-color: #9bb89e; /* Greenish border */
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 145, 34, 0.2), 8, 0.3, 0, 2); /* Subtle green shadow */
+}
+
+/* Enhance table row styles */
+.table-row-cell {
+    -fx-background-color: #eaf2e8; /* Light green */
+    -fx-border-color: #c7dac2; /* Soft border */
+    -fx-border-width: 0 0 1px 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0.0, 0, 1); /* Soft shadow */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #57a56d; /* Vibrant green for selected row */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 8, 0.3, 0, 2); /* Stronger shadow for selected row */
+}
+
+/* Table cell styles */
+.table-cell {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #2f4f4f; /* Dark green text */
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-background-color: transparent;
+}
+
+/* Hover effect for table rows */
+.table-row-cell:hover {
+    -fx-background-color: #8ccf95; /* Light green on hover */
+    -fx-text-fill: #2f4f4f;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.2, 0, 2); /* Subtle shadow on hover */
+}
+
+/* Style for input fields or other text elements (if needed) */
+.text-input {
+    -fx-background-color: #f0f5f2; /* Light background for input fields */
+    -fx-border-color: #9bb89e;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.1, 0, 1); /* Subtle shadow */
+}
+
+.text-input:focused {
+    -fx-border-color: #5ba270; /* Highlight border when focused */
+    -fx-effect: dropshadow(gaussian, rgba(0, 145, 34, 0.5), 6, 0.2, 0, 2); /* Stronger shadow on focus */
+}
+
+/* Overall anchor pane shadow for a layered effect */
+.acthorpanemain {
+    -fx-border-radius: 0 0 12px 12px;
+    -fx-background-color: #d9e4dc; /* Light, soft green */
+    -fx-background-radius: 0 0 12px 12px;
+    -fx-padding: 10px; /* Add padding for better spacing */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.1, 0, 5); /* Overall shadow effect */
+}
+
+
+

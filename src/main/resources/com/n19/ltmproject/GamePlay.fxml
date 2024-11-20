@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane stylesheets="@css/Gameplay.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.n19.ltmproject.client.controller.GamePlayController">
+   <children>
+      <!-- Avatar and Score User 1 -->
+      <ImageView fx:id="avatarUser1" fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="20.0">
+         <image>
+            <Image url="@images/useravartar.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="currentPlayerName" layoutX="10.0" layoutY="90.0" text="me" />
+      <Label fx:id="currentPlayerScoreLabel" layoutX="10.0" layoutY="110.0" text="Score: 0" />
+
+      <!-- Avatar and Score User 2 (Opponent) -->
+      <ImageView fx:id="avatarUser2" fitHeight="60.0" fitWidth="60.0" layoutX="530.0" layoutY="20.0">
+         <image>
+            <Image url="@images/useravartar3.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="opponentPlayerName" layoutX="530.0" layoutY="90.0" text="User2" />
+      <Label fx:id="opponentPlayerScoreLabel" layoutX="530.0" layoutY="110.0" text="Score: 0" />
+
+      <!-- Trash Image in Center -->
+      <ImageView fx:id="trashImage" fitHeight="100.0" fitWidth="100.0" layoutX="240.0" layoutY="163.0" />
+
+      <!-- Trash Cans at the Bottom -->
+      <ImageView fx:id="trashCan1" fitHeight="120.0" fitWidth="90.0" layoutX="30.0" layoutY="450.0">
+         <image>
+            <Image url="@images/trashbin/trashbin_glass.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="trashCan2" fitHeight="120.0" fitWidth="90.0" layoutX="140.0" layoutY="450.0">
+         <image>
+            <Image url="@images/trashbin/trashbin_metal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="trashCan3" fitHeight="120.0" fitWidth="90.0" layoutX="250.0" layoutY="450.0">
+         <image>
+            <Image url="@images/trashbin/trashbin_organic.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="trashCan4" fitHeight="120.0" fitWidth="90.0" layoutX="360.0" layoutY="450.0">
+         <image>
+            <Image url="@images/trashbin/trashbin_paper.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="trashCan5" fitHeight="120.0" fitWidth="90.0" layoutX="470.0" layoutY="450.0">
+         <image>
+            <Image url="@images/trashbin/trashbin_plastic.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="humanGameplay" fitHeight="128.0" fitWidth="100.0" layoutX="2.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/smilegameplay.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="messageGameplay" fitHeight="72.0" fitWidth="126.0" layoutX="77.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/messagegameplay.png" />
+         </image>
+      </ImageView>
+
+      <!-- Feedback Text -->
+      <Label fx:id="feedbackLabel" layoutX="102.0" layoutY="180.0" prefHeight="35.0" prefWidth="90.0" style="-fx-font-size: 24px;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+
+      <!-- Timer -->
+      <Label fx:id="timerLabel" layoutX="200.0" layoutY="40.0" style="-fx-font-size: 18px;" text="" />
+
+      <!-- Exit Button -->
+      <Button fx:id="exitButton" layoutX="10.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleExit" text="Exit" />
+      <ImageView fx:id="humanGameplay1" fitHeight="128.0" fitWidth="110.0" layoutX="485.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/crygameplay.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="messageGameplay1" fitHeight="72.0" fitWidth="126.0" layoutX="360.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/messagegameplayreverse.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="feedbackLabel1" layoutX="377.0" layoutY="187.0" prefHeight="35.0" prefWidth="90.0" style="-fx-font-size: 24px;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

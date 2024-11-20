@@ -1,0 +1,73 @@
+/* gameplay.css */
+
+/* AnchorPane Styles */
+.root {
+    -fx-background-color: #ffffff; /* White background for the main pane */
+}
+
+/* Label Styles */
+.label {
+    -fx-font-family: "Arial";
+    -fx-text-fill: #333333; /* Dark grey text for better readability */
+    -fx-font-size: 14px; /* Standard font size */
+    -fx-padding: 5px; /* Padding for labels */
+}
+
+/* Score Labels */
+#currentPlayerScoreLabel,
+#opponentPlayerScoreLabel {
+    -fx-font-weight: bold; /* Bold text for score labels */
+}
+
+/* Avatar Styles */
+#avatarUser1,
+#avatarUser2 {
+    -fx-effect: null; /* No shadow for avatars */
+}
+
+/* Trash Image Styles */
+#trashImage {
+    -fx-opacity: 0.9; /* Slight opacity for visual effect */
+}
+
+/* Trash Can Styles */
+#trashCan1,
+#trashCan2,
+#trashCan3,
+#trashCan4,
+#trashCan5 {
+    -fx-opacity: 0.9; /* Slight opacity for trash cans */
+}
+
+/* Button Styles */
+#exitButton {
+    -fx-background-color: #ff4d4d; /* Red background for the exit button */
+    -fx-text-fill: white; /* White text for contrast */
+    -fx-font-weight: bold; /* Bold text for visibility */
+    -fx-font-size: 16px; /* Larger font size for buttons */
+    -fx-padding: 10px 15px; /* Padding around the text */
+    -fx-cursor: hand; /* Hand cursor on hover */
+}
+
+/* Timer Label */
+#timerLabel {
+    -fx-font-size: 18px; /* Larger font for the timer */
+    -fx-text-fill: #0000cc; /* Blue color for the timer */
+    -fx-font-weight: bold; /* Bold text for visibility */
+}
+
+/* Feedback Label Styles */
+#feedbackLabel,
+#feedbackLabel1 {
+    -fx-font-size: 16px; /* Larger font size for feedback */
+    -fx-text-fill: #ff3333; /* Red color for feedback messages */
+    -fx-font-weight: bold; /* Bold for emphasis */
+}
+
+/* ImageView Styles for Gameplay Messages */
+#humanGameplay,
+#humanGameplay1,
+#messageGameplay,
+#messageGameplay1 {
+    -fx-opacity: 0.8; /* Slightly transparent for gameplay images */
+}

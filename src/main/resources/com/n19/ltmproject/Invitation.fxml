@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" stylesheets="@css/Invitation.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.n19.ltmproject.client.controller.InvitationController">
+   <ImageView fitHeight="240.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@images/backgroundhomepage2.png" />
+   </ImageView>
+   <ImageView fitHeight="360.0" fitWidth="600.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@images/backgroundhomepage1.png" />
+   </ImageView>
+   <AnchorPane layoutX="24.0" layoutY="237.0" prefHeight="353.0" prefWidth="558.0" styleClass="acthorpanemain-invitation">
+      <AnchorPane fx:id="pane2" layoutX="2.0" layoutY="2.0" prefHeight="346.0" prefWidth="553.0" styleClass="acthorpanechild-invitation">
+         <Label layoutX="427.0" layoutY="16.0" prefHeight="54.0" prefWidth="94.0" text="PROFILE" textFill="#01b861">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+         <Label fx:id="invitationProfile" layoutX="434.0" layoutY="54.0" prefHeight="44.0" prefWidth="79.0" text="USER1" textFill="#01b861">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+         <Button fx:id="LabelTotalPoint" layoutX="346.0" layoutY="155.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="162.0" styleClass="button-acthorpane-invitation" text="POINT:" />
+         <Button fx:id="LabelLosses" layoutX="346.0" layoutY="290.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="162.0" styleClass="button-acthorpane-invitation" text="LOSS:" />
+         <Button fx:id="LabelTotalGames" layoutX="346.0" layoutY="110.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="162.0" styleClass="button-acthorpane-invitation" text="TOTALGAME:" />
+         <Circle fill="#221e1f" layoutX="383.0" layoutY="55.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+         <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="361.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@images/iconrecycle2.png" />
+         </ImageView>
+         <ImageView fitHeight="338.0" fitWidth="285.0" layoutX="18.0" layoutY="2.0" pickOnBounds="true">
+            <image>
+               <Image url="@images/invitation-image.png" />
+            </image>
+         </ImageView>
+         <Button fx:id="LabelDraws" layoutX="346.0" layoutY="245.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="162.0" styleClass="button-acthorpane-invitation" text="DRAW:" />
+         <Button fx:id="LabelWins" layoutX="346.0" layoutY="200.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="162.0" styleClass="button-acthorpane-invitation" text="WIN:" />
+         <Button layoutX="27.0" layoutY="188.0" mnemonicParsing="false" onAction="#ClickAccept" prefHeight="50.0" prefWidth="144.0" styleClass="buttonaccept-invitation" stylesheets="@css/Invitation.css" text="ACCEPT" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+         </Button>
+         <Button layoutX="27.0" layoutY="276.0" mnemonicParsing="false" onAction="#ClickRefuse" prefHeight="50.0" prefWidth="144.0" styleClass="buttonrefuse-invitation" stylesheets="@css/Invitation.css" text="REFUSE" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+         </Button>
+         <AnchorPane layoutX="18.0" layoutY="88.0" prefHeight="88.0" prefWidth="278.0" styleClass="acthorpanechild-invitation-inviteyou">
+            <children>
+               <Button fx:id="inviter" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="258.0" styleClass="button-acthorpane-invitation-inviteyou" text="USER1 INVITE YOU" textFill="#01b861" />
+            </children>
+         </AnchorPane>
+         <Label fx:id="countdownInvitation" layoutX="520.0" layoutY="2.0" prefHeight="29.0" prefWidth="31.0" styleClass="countdownNumberInvitation" text="10" />
+      </AnchorPane>
+   </AnchorPane>
+</AnchorPane>

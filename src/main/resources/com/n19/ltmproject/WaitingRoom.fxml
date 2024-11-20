@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" stylesheets="@css/WaitingRoom.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.n19.ltmproject.client.controller.WaitingRoomController">
+   <ImageView fitHeight="600.0" fitWidth="600.0" pickOnBounds="true">
+      <Image url="@images/backgroundwaitingroom.png" />
+   </ImageView>
+   <Label layoutX="215.0" layoutY="6.0" prefHeight="75.0" prefWidth="299.0" styleClass="label-waiting-idphong" text=" WAITING ROOM " textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <Button fx:id="exitButtonWaiting" layoutY="1.0" mnemonicParsing="false" onAction="#ClickExit" prefHeight="43.0" prefWidth="62.0" styleClass="button-waiting-exit" text="EXIT" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Button>
+
+   <!-- Host and Player Names -->
+   <AnchorPane layoutX="163.0" layoutY="218.0" prefHeight="34.0" prefWidth="182.0" style="-fx-background-color: #2ECC57;">
+      <children>
+         <Label fx:id="waitingRoomHostName" layoutX="21.0" layoutY="8.0" text="USER1" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+   <AnchorPane layoutX="345.0" layoutY="218.0" prefHeight="34.0" prefWidth="98.0" style="-fx-background-color: #2ECC57;">
+      <children>
+         <Label fx:id="waitingRoomPlayerName" layoutX="18.0" layoutY="7.0" text="USER2" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+
+   <!-- Buttons to Show Inviter/Invitee Status -->
+   <Button fx:id="inviterButton" layoutX="146.0" layoutY="264.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="138.0" styleClass="button-waiting-ready" text="READY" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Button>
+   <Button fx:id="inviteeButton" layoutX="317.0" layoutY="262.0" mnemonicParsing="false" onAction="#ClickReady" prefHeight="41.0" prefWidth="141.0" styleClass="button-waiting-ready2" text="WAITING" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Button>
+
+   <!-- Countdown Timer -->
+   <Label fx:id="countdownLabel" layoutX="270.0" layoutY="380.0" prefHeight="30.0" prefWidth="60.0" styleClass="coundountplaying" text="10" textFill="WHITE" visible="false">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label fx:id="countdownText" layoutX="140.0" layoutY="329.0" prefHeight="57.0" prefWidth="354.0" styleClass="countdownText" text="Trận đấu sẽ bắt đầu sau " visible="false">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </Label>
+   <Label fx:id="LabelWaitReady" layoutX="190.0" layoutY="361.0" prefHeight="50.0" prefWidth="220.0" styleClass="labelWaitReady" text="Chờ đối thủ Ready" visible="false" />
+   <Label fx:id="LabelWaitgoRoom" layoutX="190.0" layoutY="371.0" styleClass="labelWaitgoRoom" text="Chờ đối thủ vào phòng" />
+</AnchorPane>

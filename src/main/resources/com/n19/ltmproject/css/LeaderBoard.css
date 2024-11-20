@@ -1,0 +1,58 @@
+.button-leaderboard{
+    -fx-background-color: linear-gradient(to right, #00BF63, #7ED957);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size:20px;
+    /*-fx-padding: 10 20;*/
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 2);
+}
+
+.button-leaderboard:hover {
+    -fx-background-color: linear-gradient(to right, #4cae3e, #98d45c);
+}
+.styled-table {
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-view {
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+    -fx-text-alignment: center;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: white; /* Header background color */
+}
+.table-view .scroll-bar:horizontal { /* Ẩn thanh cuộn ngang   */
+    -fx-opacity: 0;
+    -fx-pref-height: 0px;
+}
+.table-view .column-header {
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-background-color: white; /* Header background color */
+    -fx-text-fill: black;  /* Change text color to black */
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+    -fx-padding: 15px 0; /* Adjust padding to increase header row height */
+    -fx-pref-height: 50px; /* Set preferred height for header */
+}
+
+.table-view .table-row-cell {
+    -fx-pref-height: 50px; /* Set the height of each row */
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #7ED957;
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color:#00BF63;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;
+}

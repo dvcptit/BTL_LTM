@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.VBox?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/23"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.n19.ltmproject.client.controller.MainPageController">
+   <ImageView fitHeight="240.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@images/backgroundhomepage2.png" />
+   </ImageView>
+   <ImageView fitHeight="360.0" fitWidth="600.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@images/backgroundhomepage1.png" />
+   </ImageView>
+   <AnchorPane layoutX="23.0" layoutY="239.0" prefHeight="351.0" prefWidth="558.0" styleClass="acthorpanemain" stylesheets="@css/MainPage.css">
+      <AnchorPane fx:id="pane2" layoutX="4.0" layoutY="3.0" prefHeight="350.0" prefWidth="534.0" stylesheets="@css/application.css">
+         <Label layoutX="91.0" layoutY="-1.0" text="PLAYERS" textFill="#0dbc4a">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+         <HBox layoutX="10.0" layoutY="263.0" spacing="10" alignment="CENTER">
+            <Button fx:id="onlineButton" mnemonicParsing="false" onAction="#ClickOnlineButton" prefHeight="40.0" prefWidth="60.0" styleClass="button-acthorpane" stylesheets="@css/application.css" text="ON">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="inGameButton" mnemonicParsing="false" onAction="#ClickInGameButton" prefHeight="40.0" prefWidth="100.0" styleClass="button-acthorpane" stylesheets="@css/application.css" text="IN_GAME">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="offlineButton" mnemonicParsing="false" onAction="#ClickOfflineButton" prefHeight="40.0" prefWidth="60.0" styleClass="button-acthorpane" stylesheets="@css/application.css" text="OFF">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </HBox>
+
+         <TableView fx:id="table" focusTraversable="false" layoutX="12.0" layoutY="34.0" prefHeight="205.0" prefWidth="242.0" stylesheets="@css/application.css">
+            <columns>
+               <TableColumn fx:id="numberColumn" prefWidth="50.0" text="No." />
+               <TableColumn fx:id="username" prefWidth="92.0" text="Name" />
+               <TableColumn fx:id="statusColumn" minWidth="0.0" prefWidth="97.5999755859375" text="Status" />
+            </columns>
+         </TableView>
+
+         <HBox layoutX="270.0" layoutY="34.0" spacing="10">
+            <VBox spacing="10">
+               <Button layoutX="0.0" mnemonicParsing="false" onAction="#ClickGameRule" prefHeight="40.0" prefWidth="275.0" style="-fx-background-color: #0DBC4A;" text="Game Rule" textFill="WHITE" styleClass="pointer-button">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button layoutX="0.0" mnemonicParsing="false" onAction="#ClickLeaderBoard" prefHeight="40.0" prefWidth="275.0" style="-fx-background-color: #0DBC4A;" text="LeaderBoard" textFill="WHITE" styleClass="pointer-button">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button layoutX="0.0" mnemonicParsing="false" onAction="#ClickHistory" prefHeight="40.0" prefWidth="275.0" style="-fx-background-color: #0DBC4A;" text="History" textFill="WHITE" styleClass="pointer-button">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button disable="true" fx:id="inviteButton" layoutX="0.0" mnemonicParsing="false" onAction="#ClickInvitePlayer" prefHeight="40.0" prefWidth="275.0" style="-fx-background-color: #0DBC4A;" text="INVITE" textFill="WHITE" styleClass="pointer-button">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <!-- HBox for Refresh and Logout buttons below the INVITE button -->
+               <HBox spacing="10" alignment="CENTER_LEFT">
+                  <Button mnemonicParsing="false" onAction="#ClickRefresh" prefHeight="40.0" prefWidth="132" style="-fx-background-color: #3B8E26;" text="REFRESH" textFill="WHITE" styleClass="pointer-button">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#ClickLogout" prefHeight="40.0" prefWidth="132" style="-fx-background-color: red;" text="LOGOUT" textFill="WHITE" styleClass="pointer-button">
+                     <font>
+                        <Font name="System Bold" size="8.0" />
+                     </font>
+                  </Button>
+               </HBox>
+            </VBox>
+         </HBox>
+         <Label fx:id="mainPageUsername" layoutX="322.0" layoutY="-1.0" prefHeight="18.0" prefWidth="79.0" text="Label" textFill="RED">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="91.0" layoutY="295.0" prefHeight="54.0" prefWidth="110.0" text="STATUS" textFill="#0dbc4a">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+         <Circle fill="#221e1f" layoutX="410.0" layoutY="310.0" radius="31.0" stroke="BLACK" strokeType="INSIDE" />
+         <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="395.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@images/iconrecycle2.png" />
+         </ImageView>
+         <Label fx:id="scoreUser" layoutX="426.0" layoutY="-1.0" prefHeight="30.0" prefWidth="117.0" text="Label" textFill="RED">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+   </AnchorPane>
+   <Label fx:id="labelrefusematch" layoutX="135.0" layoutY="132.0" prefHeight="50.0" prefWidth="330.0" styleClass="labelrefusematch" stylesheets="@css/MainPage.css" text="Đối thủ từ chối lời mời" visible="false" />
+   <Label fx:id="labelcancelmatch" layoutX="143.0" layoutY="120.0" styleClass="labelcancelmatch" stylesheets="@css/MainPage.css" text="Trận đấu bị hủy do đối thủ đã thoát" visible="false" />
+</AnchorPane>

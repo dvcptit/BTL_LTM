@@ -1,0 +1,131 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/*START Trang Chu CSS  */
+.acthorpanemain{
+
+    -fx-border-radius: 10px;      /* Độ bo tròn của viền */
+    -fx-background-color: #E7DCC1;   /* Màu nền */
+    -fx-background-radius: 10px;
+}
+.acthorpanechild {
+    -fx-border-color: gray;      /* Màu sắc của viền */
+    -fx-border-width: 1px;        /* Độ dày của viền */
+    -fx-border-style: solid;       /* Kiểu viền (solid, dashed, dotted, v.v.) */
+    -fx-border-radius: 10px;      /* Độ bo tròn của viền */
+    -fx-background-color: #E7DCC1;   /* Màu nền */
+    -fx-background-radius: 10px;   /* Độ bo tròn cho nền */
+}
+
+.table-view {
+    -fx-background-color: #E7DCC1;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+.table-view .scroll-bar:horizontal { /* Ẩn thanh cuộn ngang   */
+    -fx-opacity: 0;
+    -fx-pref-height: 0px;
+}
+.table-view .column-header {
+    -fx-background-color: #E7DCC1; /* Màu nền header*/
+}
+.table-column {
+    -fx-border-width: 0;
+}
+.table-cell {
+    -fx-alignment: CENTER; /* Căn giữa cả chiều ngang và chiều dọc cho tất cả các ô */
+    -fx-text-fill: #000;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: red;
+}
+
+.table-row-cell:focused {
+    -fx-background-color: #999;
+}
+
+.table-row-cell {
+    -fx-background-color: transparent;
+}
+.button-acthorpane {
+    -fx-background-color: #fdf2db;
+    -fx-border-color: #000000;
+    -fx-border-width: 1;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 5 15;
+    -fx-text-fill: #2f4f5f;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+}
+
+.button-acthorpane:hover {
+    -fx-background-color: #e9e0c9;
+}
+
+.button-acthorpane:pressed {
+    -fx-background-color: #d8c9a9;
+}
+
+.button-acthorpane .dot {
+    -fx-background-color: #3B8E26;
+    -fx-background-radius: 50%;
+    -fx-min-width: 10px;
+    -fx-min-height: 10px;
+    -fx-max-width: 10px;
+    -fx-max-height: 10px;
+    -fx-margin-right: 10px;
+}
+.buttonstartandinvite{
+    -fx-background-color:  #3B8E26;
+    -fx-border-radius: 15;
+    -fx-background-radius: 30;
+}
+/*END CSS TrangChu */
+
+
+/*START WAITINGROOM CSS */
+.acthorpane-waiting-main{
+    -fx-border-radius: 10px;      /* Độ bo tròn của viền */
+    -fx-background-color: #E7DCC1;   /* Màu nền */
+    -fx-background-radius: 10px;
+}
+.button-waiting-start{
+    -fx-background-color:  #3B8E26;
+    -fx-border-radius: 15;
+    -fx-background-radius: 30;
+}
+.label-waiting-idphong{
+    -fx-background-color: #3B8E26;
+    -fx-alignment: center;
+}
+.acthorpane-waiting-online{
+    -fx-border-radius: 10px;      /* Độ bo tròn của viền */
+    -fx-background-color: #F5F5F5;   /* Màu nền */
+    -fx-background-radius: 10px;
+}
+.acthorpane-waiting-child{
+    -fx-background-color: #D9D9D9;
+}
+
+/*END CSS WAITINGROOM */
+
+.achievement-pane-yellow{
+    -fx-border-color: #8D7639; /* Màu viền */
+    -fx-border-width: 1;   /* Độ dày viền */
+    -fx-border-style: solid; /* Kiểu viền */
+}
+.achievement-pane-user{
+    -fx-background-radius: 0 0 20 20; /* Bo tròn góc trái dưới và phải dưới */
+    -fx-border-radius: 0 0 20 20;
+    -fx-background-color: #333333;
+}
+
+.achievement-pane-child{
+    -fx-border-color: gray; /* Màu viền */
+    -fx-border-width: 1;   /* Độ dày viền */
+    -fx-border-style: solid; /* Kiểu viền */
+    -fx-background-color: #333333;
+}
+
+
+

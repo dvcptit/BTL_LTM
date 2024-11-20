@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #231F20;" stylesheets="@css/Achievement.css" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.n19.ltmproject.client.controller.AchievementController">
+   <AnchorPane prefHeight="107.0" prefWidth="600.0" style="-fx-background-color: #231F20;" stylesheets="@css/Achievement.css">
+      <Label layoutX="31.0" layoutY="40.0" onMouseClicked="#ClickHome" prefHeight="28.0" prefWidth="53.0" text="Home" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="66.0" fitWidth="126.0" layoutX="423.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@images/useravartar2.png" />
+      </ImageView>
+      <Label layoutX="496.0" layoutY="38.0" text="Username" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Line endX="641.0" endY="-0.8000030517578125" layoutX="-41.0" layoutY="105.0" startX="41.0000114440918" startY="-0.8000030517578125" stroke="GREY" strokeWidth="5.0" />
+   </AnchorPane>
+   <AnchorPane layoutX="13.0" layoutY="119.0" prefHeight="466.0" prefWidth="577.0" styleClass="achievement-pane-yellow">
+      <AnchorPane layoutX="8.0" layoutY="1.0" prefHeight="373.0" prefWidth="143.0" styleClass="achievement-pane-user">
+         <ImageView fitHeight="97.0" fitWidth="140.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@images/useravartar3.png" />
+         </ImageView>
+         <Label layoutX="22.0" layoutY="191.0" prefHeight="35.0" prefWidth="109.0" text="Username" textFill="WHITE">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <Label layoutX="49.0" layoutY="256.0" prefHeight="35.0" prefWidth="90.0" text="Label" textFill="#8d7639">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+      <Label layoutX="181.0" layoutY="14.0" prefHeight="35.0" prefWidth="154.0" text="Achievement" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField focusTraversable="false" layoutX="181.0" layoutY="56.0" prefHeight="28.0" prefWidth="110.0" styleClass="thanhtuu-field" text="Search" />
+      <CheckBox layoutX="303.0" layoutY="61.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="143.0" selected="true" text="Not currently owned" textFill="#dddddd" />
+      <AnchorPane layoutX="181.0" layoutY="106.0" prefHeight="90.0" prefWidth="122.0" styleClass="achievement-pane-child">
+         <Label layoutX="28.0" layoutY="31.0" prefHeight="28.0" prefWidth="53.0" text="No title" textFill="#dddddd">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+      <Label layoutX="181.0" layoutY="205.0" prefHeight="28.0" prefWidth="53.0" text="Top 1%" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="181.0" layoutY="240.0" prefHeight="90.0" prefWidth="122.0" styleClass="achievement-pane-child">
+         <Label layoutX="7.0" layoutY="31.0" prefHeight="28.0" prefWidth="110.0" text="Ocean Cleaner" textFill="#dddddd">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+      <AnchorPane layoutX="313.0" layoutY="240.0" prefHeight="90.0" prefWidth="122.0" styleClass="achievement-pane-child">
+         <Label layoutX="7.0" layoutY="31.0" prefHeight="28.0" prefWidth="110.0" text="Green Recycle" textFill="#dddddd">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+      <AnchorPane layoutX="445.0" layoutY="240.0" prefHeight="90.0" prefWidth="122.0" styleClass="achievement-pane-child">
+         <Label layoutX="7.0" layoutY="31.0" prefHeight="28.0" prefWidth="110.0" text="Environmental" textFill="#dddddd">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+      <AnchorPane layoutX="181.0" layoutY="344.0" prefHeight="90.0" prefWidth="122.0" styleClass="achievement-pane-child">
+         <Label layoutX="7.0" layoutY="31.0" prefHeight="28.0" prefWidth="110.0" text="Eco Champion" textFill="#dddddd">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+      <AnchorPane layoutX="313.0" layoutY="344.0" prefHeight="90.0" prefWidth="122.0" styleClass="achievement-pane-child">
+         <Label layoutX="7.0" layoutY="31.0" prefHeight="28.0" prefWidth="110.0" text="Sorting Master" textFill="#dddddd">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+      <AnchorPane layoutX="445.0" layoutY="344.0" prefHeight="90.0" prefWidth="122.0" styleClass="achievement-pane-child">
+         <Label layoutX="7.0" layoutY="31.0" prefHeight="28.0" prefWidth="110.0" text="Paper Hunter" textFill="#dddddd">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+   </AnchorPane>
+</AnchorPane>

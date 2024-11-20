@@ -1,0 +1,81 @@
+/*START WAITINGROOM CSS */
+.acthorpane-waiting-main{
+    -fx-border-radius: 10px;      /* Độ bo tròn của viền */
+    -fx-background-color: #E7DCC1;   /* Màu nền */
+    -fx-background-radius: 10px;
+}
+.button-waiting-start{
+    -fx-background-color:  #2ECC57;
+    -fx-border-radius: 15;
+    -fx-background-radius: 30;
+}
+.button-waiting-ready{
+    -fx-background-color:  #91CF24;
+    -fx-border-radius: 15;
+    -fx-background-radius: 30;
+}
+.button-waiting-ready2{
+    -fx-background-color: brown ;
+    -fx-border-radius: 15;
+    -fx-background-radius: 30;
+    -fx-cursor: hand;
+}
+.button-waiting-exit{
+    -fx-background-color:  #2ECC57;
+}
+.acthorpane-waiting-online{
+    -fx-border-radius: 10px;      /* Độ bo tròn của viền */
+    -fx-background-color: #F5F5F5;   /* Màu nền */
+    -fx-background-radius: 10px;
+}
+.acthorpane-waiting-child{
+    -fx-background-color: #D9D9D9;
+}
+.coundountplaying{
+    -fx-font-size: 30px;
+    -fx-text-fill: #FF4500;
+    -fx-background-color: #282828;
+    -fx-padding: 10px;
+    -fx-border-color: #FF4500;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, #000000, 5, 0.5, 0, 0);
+}
+.countdownText{
+    fx-font-size: 18px;
+    -fx-text-fill: #FFFFFF;
+    -fx-padding: 10px;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(gaussian, #000000, 3, 0.5, 0, 0);
+    -fx-alignment: center;
+}
+.labelWaitReady{
+    -fx-background-color: #ffdddd;
+    -fx-text-fill: #d9534f;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-color: #d43f3a;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
+    -fx-alignment: center;
+}
+.labelWaitgoRoom{
+    -fx-background-color: #ffdddd;
+    -fx-text-fill: #d9534f;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-color: #d43f3a;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
+    -fx-alignment: center;
+}
+
+/*END CSS WAITINGROOM */

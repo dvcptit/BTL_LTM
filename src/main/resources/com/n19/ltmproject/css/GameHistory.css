@@ -1,0 +1,81 @@
+/*.table-view {*/
+/*    -fx-background-color: #f4f4f4;*/
+/*    -fx-border-color: #d3d3d3;*/
+/*    -fx-border-radius: 10;*/
+/*    -fx-background-radius: 10;*/
+/*}*/
+
+/*.table-column-header {*/
+/*    -fx-background-color: #3a7ca5;*/
+/*    -fx-text-fill: white;*/
+/*    -fx-font-size: 14px;*/
+/*    -fx-font-weight: bold;*/
+/*}*/
+
+/*.table-row-cell {*/
+/*    -fx-background-color: #ffffff;*/
+/*    -fx-border-color: transparent transparent #d3d3d3 transparent;*/
+/*}*/
+
+/*.table-row-cell:selected {*/
+/*    -fx-background-color: #b3e5fc; !* Màu khi chọn *!*/
+/*}*/
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #bdbdbd;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.15), 8, 0.1, 0, 2);
+}
+.table-view .column-header-background {
+    -fx-background-color: white; /* Header background color */
+}
+.table-view .column-header {
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-background-color: white; /* Header background color */
+    -fx-text-fill: black;  /* Change text color to black */
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+    -fx-padding: 15px 0; /* Adjust padding to increase header row height */
+    -fx-pref-height: 50px; /* Set preferred height for header */
+}
+
+.table-row-cell {
+    -fx-border-color: transparent transparent #e0e0e0 transparent;
+    -fx-background-radius: 8;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #b2dfdb; /* Light teal for even rows */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #98d45c; /* Darker green for odd rows */
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #71aaa5; /* Teal on hover */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #07b5a7; /* Darker teal selection */
+    -fx-text-fill: #004d40; /* Dark teal text color on selection */
+    -fx-font-weight: bold;
+}
+
+.table-cell {
+    -fx-padding: 8px 12px;
+    -fx-font-size: 13px;
+    -fx-text-fill: #37474f;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-cell:focused {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+
+
+

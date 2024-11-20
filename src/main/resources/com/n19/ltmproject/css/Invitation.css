@@ -1,0 +1,66 @@
+/*START Trang Chu CSS  */
+.acthorpanemain-invitation{
+
+    -fx-border-radius: 0 0 10px 10px;;      /* Độ bo tròn của viền */
+    -fx-background-color: #F5E7C0;   /* Màu nền */
+    -fx-background-radius: 0 0 10px 10px;
+}
+.acthorpanechild-invitation{
+    -fx-border-color: gray;      /* Màu sắc của viền */
+    -fx-border-width: 1px;        /* Độ dày của viền */
+    -fx-border-style: solid;       /* Kiểu viền (solid, dashed, dotted, v.v.) */
+    -fx-border-radius: 10px;      /* Độ bo tròn của viền */
+    -fx-background-color: #F5E7C0;   /* Màu nền */
+    -fx-background-radius: 10px;   /* Độ bo tròn cho nền */
+}
+
+
+.button-acthorpane-invitation{
+    -fx-background-color: #fdf2db;
+    -fx-border-color: #000000;
+    -fx-border-width: 1;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 5 15;
+    -fx-text-fill: #2f4f5f;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+}
+.acthorpanechild-invitation-inviteyou{
+    -fx-background-color: #F5E7C0;
+}
+.button-acthorpane-invitation-inviteyou{
+    -fx-background-color: #F5E7C0;
+    -fx-border-color: #01B861;
+    -fx-border-width: 1;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 5 15;
+    -fx-text-fill: #01B861;
+    -fx-font-family: "Arial";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.buttonaccept-invitation{
+    -fx-background-color:  #01B861;
+    -fx-border-radius: 15;
+    -fx-background-radius: 30;
+}
+.buttonrefuse-invitation{
+    -fx-background-color:  #F85A37;
+    -fx-border-radius: 15;
+    -fx-background-radius: 30;
+}
+
+.countdownNumberInvitation{
+    -fx-font-size: 25px;
+    -fx-text-fill: #FF4500;
+    -fx-background-color: #282828;
+    -fx-border-color: #FF4500;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, #000000, 5, 0.5, 0, 0);
+}
+/*END CSS TrangChu */

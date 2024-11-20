@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.n19.ltmproject.client.controller.GameHistoryController">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="20" layoutY="10" prefWidth="760" spacing="20">
+            <Label style="-fx-font-size: 30px; -fx-text-fill: #ecec10" text="🏆" /> <!-- Dùng ký hiệu Unicode hình chiếc cúp -->
+            <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #4cae3e;" text="Lịch sử đấu của bạn" />
+            <!-- Spacer để đẩy nút về phía bên phải -->
+            <Region HBox.hgrow="ALWAYS" />
+
+            <!-- Nút "Quay về trang chủ" -->
+            <Button onAction="#handleBackToHome" prefHeight="40" prefWidth="160" style="-fx-background-color: #4cae3e; -fx-text-fill: white; -fx-font-size: 16px;" text="Quay về trang chủ" />
+            <Region />
+        </HBox>
+
+        <!-- TableView -->
+        <TableView fx:id="gameHistoryTable" layoutY="60" prefHeight="400" prefWidth="780" stylesheets="@css/GameHistory.css" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+            <columns>
+                <TableColumn fx:id="numberColumn" prefWidth="40" text="STT" />
+                <TableColumn fx:id="player1NameColumn" prefWidth="100" text="Player 1 Name" />
+                <TableColumn fx:id="player1ScoreColumn" prefWidth="90" text="Player 1 Score" />
+                <TableColumn fx:id="player2NameColumn" prefWidth="100" text="Player 2 Name" />
+                <TableColumn fx:id="player2ScoreColumn" prefWidth="90" text="Player 2 Score" />
+                <TableColumn fx:id="startTimeColumn" prefWidth="160" text="Start Time" />
+                <TableColumn fx:id="endTimeColumn" prefWidth="160" text="End Time" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

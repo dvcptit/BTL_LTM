@@ -1,0 +1,60 @@
+.opponentLeftLabel {
+    -fx-background-color: #ffdddd;
+    -fx-text-fill: #d9534f;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-color: #d43f3a;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
+    -fx-alignment: center;
+}
+.playapainPane {
+    -fx-padding: 20px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ddd;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+}
+
+/* CSS cho Label thông báo */
+.messageLabel {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+
+/* CSS cho Button "Chấp nhận" */
+.acceptplayagainButton {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 3);
+}
+
+.acceptplayagainButton:hover {
+    -fx-background-color: #45a049;
+}
+
+/* CSS cho Button "Từ chối" */
+.rejectplayagainButton {
+    -fx-background-color: #F44336;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 3);
+}
+
+.rejectplayagainButton:hover {
+    -fx-background-color: #e53935;
+}

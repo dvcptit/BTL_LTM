@@ -1,0 +1,12 @@
+.acthorpane-exit-main{
+    -fx-background-color: #5B5555;
+}
+.acthorpane-exit-child{
+    -fx-background-color:#D9D9D9 ;
+    -fx-background-radius: 10px;
+}
+.button-confirm-and-cancel{
+    -fx-background-color:#2C2C2C;
+    -fx-background-radius: 10px;
+
+}
